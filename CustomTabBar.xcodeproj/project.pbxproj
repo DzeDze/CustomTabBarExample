@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		024911D92C9CFA040090DE17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911D82C9CFA040090DE17 /* AppDelegate.swift */; };
-		024911DB2C9CFA040090DE17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911DA2C9CFA040090DE17 /* SceneDelegate.swift */; };
 		024911DD2C9CFA040090DE17 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911DC2C9CFA040090DE17 /* ViewController.swift */; };
-		024911E02C9CFA040090DE17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024911DE2C9CFA040090DE17 /* Main.storyboard */; };
 		024911E22C9CFA070090DE17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 024911E12C9CFA070090DE17 /* Assets.xcassets */; };
-		024911E52C9CFA070090DE17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 024911E32C9CFA070090DE17 /* LaunchScreen.storyboard */; };
+		024911ED2C9E07490090DE17 /* CustomTabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911EC2C9E07490090DE17 /* CustomTabBarView.swift */; };
+		024911EF2C9E085E0090DE17 /* CustomTabBarItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911EE2C9E085E0090DE17 /* CustomTabBarItemViewModel.swift */; };
+		024911F12C9E09760090DE17 /* CustomTabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911F02C9E09760090DE17 /* CustomTabBarItem.swift */; };
+		024911F32C9E0B2C0090DE17 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911F22C9E0B2C0090DE17 /* Extensions.swift */; };
+		024911F52C9E911D0090DE17 /* DummyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024911F42C9E911D0090DE17 /* DummyViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		024911D52C9CFA040090DE17 /* CustomTabBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomTabBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		024911D82C9CFA040090DE17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		024911DA2C9CFA040090DE17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		024911DC2C9CFA040090DE17 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		024911DF2C9CFA040090DE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		024911E12C9CFA070090DE17 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		024911E42C9CFA070090DE17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		024911E62C9CFA070090DE17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		024911EC2C9E07490090DE17 /* CustomTabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarView.swift; sourceTree = "<group>"; };
+		024911EE2C9E085E0090DE17 /* CustomTabBarItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItemViewModel.swift; sourceTree = "<group>"; };
+		024911F02C9E09760090DE17 /* CustomTabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarItem.swift; sourceTree = "<group>"; };
+		024911F22C9E0B2C0090DE17 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		024911F42C9E911D0090DE17 /* DummyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DummyViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,11 +61,13 @@
 			isa = PBXGroup;
 			children = (
 				024911D82C9CFA040090DE17 /* AppDelegate.swift */,
-				024911DA2C9CFA040090DE17 /* SceneDelegate.swift */,
 				024911DC2C9CFA040090DE17 /* ViewController.swift */,
-				024911DE2C9CFA040090DE17 /* Main.storyboard */,
+				024911EC2C9E07490090DE17 /* CustomTabBarView.swift */,
+				024911EE2C9E085E0090DE17 /* CustomTabBarItemViewModel.swift */,
+				024911F02C9E09760090DE17 /* CustomTabBarItem.swift */,
+				024911F22C9E0B2C0090DE17 /* Extensions.swift */,
+				024911F42C9E911D0090DE17 /* DummyViewController.swift */,
 				024911E12C9CFA070090DE17 /* Assets.xcassets */,
-				024911E32C9CFA070090DE17 /* LaunchScreen.storyboard */,
 				024911E62C9CFA070090DE17 /* Info.plist */,
 			);
 			path = CustomTabBar;
@@ -125,9 +131,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				024911E52C9CFA070090DE17 /* LaunchScreen.storyboard in Resources */,
 				024911E22C9CFA070090DE17 /* Assets.xcassets in Resources */,
-				024911E02C9CFA040090DE17 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,32 +142,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				024911F52C9E911D0090DE17 /* DummyViewController.swift in Sources */,
+				024911F12C9E09760090DE17 /* CustomTabBarItem.swift in Sources */,
+				024911F32C9E0B2C0090DE17 /* Extensions.swift in Sources */,
+				024911EF2C9E085E0090DE17 /* CustomTabBarItemViewModel.swift in Sources */,
+				024911ED2C9E07490090DE17 /* CustomTabBarView.swift in Sources */,
 				024911DD2C9CFA040090DE17 /* ViewController.swift in Sources */,
 				024911D92C9CFA040090DE17 /* AppDelegate.swift in Sources */,
-				024911DB2C9CFA040090DE17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXVariantGroup section */
-		024911DE2C9CFA040090DE17 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				024911DF2C9CFA040090DE17 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		024911E32C9CFA070090DE17 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				024911E42C9CFA070090DE17 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		024911E72C9CFA070090DE17 /* Debug */ = {
@@ -297,9 +286,9 @@
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -325,9 +314,9 @@
 				INFOPLIST_FILE = CustomTabBar/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
