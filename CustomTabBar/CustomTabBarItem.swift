@@ -7,8 +7,6 @@
 
 import UIKit
 
-let selectedBGColor = UIColor.systemPink
-let normalBGColor = UIColor.white
 let selectedTextColor = UIColor.white
 let normalTextColor = UIColor.black
 
